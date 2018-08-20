@@ -219,6 +219,16 @@ span, p, a
   padding: 0 auto;
 }
 
+.game-trailer video
+{
+  position: absolute;
+  top: -50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
 .game-title
 {
   display: table-cell;

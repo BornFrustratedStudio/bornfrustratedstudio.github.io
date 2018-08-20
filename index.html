@@ -15,11 +15,11 @@
   <meta property="og:site_name" content="Born Frustrated Studio" />
 
   <!-- Site Image -->
-  <meta property="og:image" content="http://bornfrustratedstudio.github.io/ui/logo.png" />
-  <meta name="twitter:image" content="http://bornfrustratedstudio.github.io/ui/logo.png" />
+  <meta property="og:image" content="http://bornfrustratedstudio.github.io/resources/ui/logo.png" />
+  <meta name="twitter:image" content="http://bornfrustratedstudio.github.io/resources/ui/logo.png" />
   
   <!-- Site Icon -->
-  <link rel="icon" href="/images/logo/icon.svg">
+  <link rel="icon" href="resources/ui/brand.png">
 
   <!-- Site Description -->
   <meta name="description" content="Born Frustrated is a small independent game studio based in Italy.
@@ -49,7 +49,7 @@
   <!-- Stylesheet-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/fonts.css" type="text/css"> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css"> 
 </head>
 
@@ -58,7 +58,7 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand js-scroll-trigger" href="#home-top">
-        <img style="width:45px" class="img-fluid" src="ui/brand.png" alt="Home" />
+        <img style="width:45px" class="img-fluid" src="resources/ui/brand.png" alt="Home" />
       </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
         <span class="navbar-toggler-icon"></span>
@@ -95,13 +95,13 @@
             <!-- INDICATORS -->
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                <img src="ui/triangle.png" alt="First Carousel Image" />
+                  <img src="resources/ui/triangle.png" alt="First Carousel Image" />
               </li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                  <img src="ui/triangle.png" alt="Second Carousel Image" />
+                  <img src="resources/ui/triangle.png" alt="Second Carousel Image" />
               </li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                  <img src="ui/triangle.png" alt="Third Carousel Image" />
+                  <img src="resources/ui/triangle.png" alt="Third Carousel Image" />
               </li>
             </ol>
             <!-- -->
@@ -110,7 +110,7 @@
             <div class="carousel-inner">
              
               <!-- FIRST CAROUSEL ELEMENT -->
-              <div class="carousel-item active" style="background-image: url(photos/cover/about.png);background-position:center center;background-size:cover;">
+              <div class="carousel-item active" style="background-image: url(resources/photos/cover/about_1600.png);background-position:center center;background-size:cover;">
                 <div class="carousel-caption caption-align-left">
                   <a class=" js-scroll-trigger text-white" style="text-decoration: none" href="#about-section">
                     <h1 class="display-1 text-uppercase">_About Us</h1>
@@ -121,7 +121,7 @@
               <!-- -->
 
               <!-- 2nd CAROUSEL ELEMENT -->              
-              <div class="carousel-item"  style="background-image: url(photos/cover/promo.png);background-position:center center;background-size:cover;">
+              <div class="carousel-item"  style="background-image: url(resources/photos/cover/promo_1200.png);background-position:center center;background-size:cover;">
                 <div class="carousel-caption caption-align-right">
                   <a class=" js-scroll-trigger text-white" style="text-decoration: none" href="#games-section">
                     <h1 class="display-1 text-uppercase">_Our Games</h1>
@@ -132,7 +132,7 @@
               <!-- -->
 
               <!-- 3rd CAROUSEL ELEMENT -->              
-              <div class="carousel-item" style="background-image: url(photos/cover/live.jpg);background-position:center center;background-size:cover;">
+              <div class="carousel-item" style="background-image: url(resources/photos/cover/live_1200.png);background-position:center center;background-size:cover;">
                   <div class="carousel-caption caption-align-left">
                   <a class=" js-scroll-trigger text-white" style="text-decoration: none" href="#social-section">
                     <h1 class="display-1 text-uppercase">_Open Dev</h1>
@@ -163,21 +163,21 @@
   <!-- Games Section -->
   <section class="cover h-100" id="games-section">
     <div class="container-fluid h-100">
-      <!--<div class="row h-50" style="background-image: url('photos/wireframes/no-image.jpg');background-position:center center;background-size:cover;">-->
       <div class="row h-50" style="overflow: hidden">
-        <div class="w-100 h-100 game-image" style="background-image: url('photos/promo.png');background-position:top center;background-size:cover;">
+        <div class="w-100 h-100 game-image" style="background-image: url('resources/photos/promo_1600.png');background-position:top center;background-size:cover;">
           <h1 class="game-title">Split Bros_</h1>
         </div>
       </div>      
-      <div class="row h-50" style="overflow: hidden">
+      <div class="row h-50" style="overflow: hidden;">
 
           <div class="w-100 h-100 game-trailer">
-            <video class="w-100 h-100 filter-dark" autoplay="" loop="">
-              <source src="https://youtu.be/wLo0sqIuwqU">
+            <video poster="resources/videos/poster-preview.png" autoplay loop muted>
+              <source  src="resources/videos/trailer-preview.mp4" type="video/mp4" />
+              <source  src="resources/videos/trailer-preview.ogg" type="video/ogg" />
+              <source  src="resources/videos/trailer-preview.webm" type="video/webm" />
                 Update your browser to fully support the video tag.
-              </source>
             </video>
-            <div class="game-trailer-description overlay">
+            <div class="game-trailer-description overlay" style="background-color: rgba(0, 0, 0, .6)">
               <h1>
                 <a href="#GoToTrailer" style="color: #fff">
                   Trailer_
@@ -208,42 +208,42 @@
       <div class="row">
         <!-- Members-->
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/jami.jpg" alt="Jamie Salati"/>
-          <h4>GIANNI GIANNA</h4>
+          <img class="img-fluid member-image py-3" src="resources/photos/members/jami.jpg" alt="Jamie Salati"/>
+          <h4>JAMI</h4>
           <span>Game Director</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/ste.jpg" alt="Stefano Lo Cogliano"/>
+          <img class="img-fluid member-image py-3" src="resources/photos/members/ste.jpg" alt="Stefano Lo Cogliano"/>
           <h4>STEFANO</h4>
           <span>Game Designer</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/gio.jpg" alt="Saffirio Giorgio"/>
+          <img class="img-fluid member-image py-3" src="resources/photos/members/gio.jpg" alt="Saffirio Giorgio"/>
           <h4>GIORGIO</h4>
           <span>Software Dev</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/nick.jpg" alt="Nicholas Falcone"/>
+          <img class="img-fluid member-image py-3" src="resources/photos/members/nick.jpg" alt="Nicholas Falcone"/>
           <h4>NICHOLAS</h4>
           <span>Software Dev</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/eugy.jpg" alt="Eugenio Scaglione"/>
+          <img class="img-fluid member-image py-3" src="resources/photos/members/eugy.jpg" alt="Eugenio Scaglione"/>
           <h4>EUGENIO</h4>
           <span>Sound Designer</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/pippo.jpg" alt="Pierfrancesco Andresini" />
+          <img class="img-fluid member-image py-3" src="resources/photos/members/pippo.jpg" alt="Pierfrancesco Andresini" />
           <h4>PIPPO</h4>
           <span>2D and Concept Artist</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/unknown.jpg" />
+          <img class="img-fluid member-image py-3" src="resources/photos/members/newmember.jpg" />
           <h4>???</h4>
           <span>2D Artist</span>
         </div>
         <div class="col-md-3 py-3">
-          <img class="img-fluid member-image py-3" src="photos/members/unknown.jpg" />
+          <img class="img-fluid member-image py-3" src="resources/photos/members/you.jpeg" />
           <h4>YOU</h4>
           <span></span>
         </div>
@@ -315,7 +315,7 @@
           <h3>_INSTAGRAM</h3>
           <div class="col-xs-12 col-sm-12 id="instagram-embed">
             <!-- LightWidget WIDGET -->
-            <iframe src="//lightwidget.com/widgets/9a787228913f56459bdf0eb30b248cd3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            <iframe src="http://lightwidget.com/widgets/9a787228913f56459bdf0eb30b248cd3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;height:300px;border:0;overflow:hidden;"></iframe>
           </div>
         </div>
 
@@ -335,7 +335,7 @@
           <h3>_DISCORD</h3>
           <div class="text-center py-2">
             <a href="#inviteMe" style="width: 100px; text-decoration: none; ">
-              <!--<img src="ui/social/discord.svg" width="100" height="100" class="img-fluid" alt="Join our Discord Community" />-->
+              <!--<img src="resources/resources/ui/social/discord.svg" width="100" height="100" class="img-fluid" alt="Join our Discord Community" />-->
               <i class="fab fa-lg fa-4x fa-discord"></i>
               <span class="d-inline-block" style="width: 180px;">Click here to join our marvellous server!</span>
             </a>
@@ -345,24 +345,6 @@
     </div>
   </section>
   <!-- -->
-
-  <!-- FOOTER #1
-  <footer class="text-center py-5" style="margin-top: 30px; background-color: rgba(255, 255, 255, .03)">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h4>_Boring Stuff</h4>
-          <a href="#cookie">Cookie Policy</a>/
-          <a href="#sitemap">SiteMap</a>/
-          <a href="#privacyPolicy">Privacy Policy</a>
-        </div>
-        <div class="col-md-6">
-            <h4>_News Letter</h4>
-            <p>AAAAAAAAAAAAA</p>
-          </div>
-      </div>
-    </div>
-  </footer>-->
 
   <!-- FOOTER #2 -->
   <footer class="py-2" style="margin-top: 30px; background-color: rgba(255, 255, 255, .05)">
@@ -416,10 +398,10 @@
               <a href="#Youtube" alt="BornFrustrated Youtube Channel">
                   <i class="fab fa-youtube"></i> 
               </a>
-              <!-- KickStarter -->
+              <!-- KickStarter 
               <a href="#Youtube" alt="BornFrustrated Kickstarter Page">
                   <i class="fab fa-kickstarter"></i> 
-              </a>      
+              </a>      -->
             </div>
         </div>
       </div>
@@ -430,27 +412,27 @@
       <div class="py-3" style="opacity: 0">.</div>
     </div>
 
-  <!--<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
   <script src="js/main.js"></script>
   <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
   <script src="https://embed.twitch.tv/embed/v1.js"></script>
   <script type="text/javascript">
       var embed = new Twitch.Embed("twitch-embed", {
         channel: 'monstercat',
-        autoplay: true,
-        layout: "video"
+        autoplay: false,
+        layout: 'video'
       });
 
-      embed.addEventListener(Twitch.Embed.VIDEO_READY, () =>
+      /*embed.addEventListener(Twitch.Embed.VIDEO_READY, () =>
       {
         var player = embed.getPlayer();
         player.play();
-      });
+      });*/
   </script>
 </body>
 
