@@ -425,13 +425,15 @@
       var embed = new Twitch.Embed("twitch-embed", {
         channel: 'monstercat',
         autoplay: false,
-        layout: 'video'
+        layout: 'video',
+        height: 300
       });
 
       embed.addEventListener(Twitch.Embed.VIDEO_READY, () =>
       {
         var player = embed.getPlayer();
         player.pause();
+        player.setMute(true);
       });
   </script>
 </body>
