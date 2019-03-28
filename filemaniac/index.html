@@ -54,7 +54,7 @@
  
     <div class="overlay"></div>
     
-      <video poster="../resources/videos/filemaniac/filemaniacteaser.png" playsinline autoplay loop muted>
+      <video poster="../resources/videos/filemaniac/filemaniacteaser.png" id="background-video" playsinline autoplay loop muted>
         <source  src="../resources/videos/filemaniac/filemaniacteaser.mp4" type="video/mp4" />
         <source  src="../resources/videos/filemaniac/filemaniacteaser.ogg" type="video/ogg" />
         <source  src="../resources/videos/filemaniac/filemaniacteaser.webm" type="video/webm" />
@@ -62,13 +62,24 @@
       </video>
     
       <div class="container h-100" id="content">
-        <div class="row h-100 justify-content-center align-items-end align-items-lg-center">
-          <div class="col-md-6 offset-md-4 col-lg-4 offset-lg-6">
+        <div class="row h-100 justify-content-center align-items-end align-items-md-center">
+
+          <div class="d-none d-md-block col-md-6 col-lg-6">
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fa_Q6MFltQc" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 offset-lg-1">
             <div class="text-white py-sm-5 py-md-0">
               <h1 class="d-none d-sm-block mb-3">://Coming Soon!</h1>
               <h2 class="d-block d-sm-none mb-3">://Coming Soon!</h2>
-              <p class="mb-5">[Game currently under development. Our target launch date is
+              <p class="mb-3 mb-md-5">[Game currently under development. Our target launch date is
                 <strong>April 27th, 2019</strong>. Sign up for updates below.]</p>
+
+                <a href="https://www.youtube.com/embed/fa_Q6MFltQc" class="btn btn-primary mb-3 d-block d-md-none" target="_blank" role="button" aria-pressed="true" alt="Trailer">
+                  <i class="far fa-play-circle"></i> Watch The Trailer
+                </a>
 
                 <!-- FORM -->
                 <form action="https://gmail.us20.list-manage.com/subscribe/post?u=804c1c8569f43c641c957464d&amp;id=6acfcebd4d"
@@ -91,12 +102,13 @@
               <div class="social-icons mt-3 mb-3 mt-sm-5 mb-sm-0">
                 <div class="row">
                     <div class="col">
+                        <a href="https://bornfrustratedstudio.com/filemaniac/presskit" title="FileManiac Presskit"  target="_blank" role="button" aria-pressed="true" class="btn btn-primary btn-block">PressKit</a>
+                    </div>
+                    <div class="col">
                       <a href="https://twitter.com/BornFrustrated_" title="BornFrustratedStudio Twitter" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
                     </div>
                     <div class="col"><a href="https://born-frustrated.itch.io/" title="BornFrustratedStudio Itch.io"  target="_blank"><i class="fab fa-itch-io fa-2x"></i></a></div>
-                    <div class="col">
-                        <a href="https://bornfrustratedstudio.com/filemaniac/presskit" title="FileManiac Presskit"  target="_blank" role="button" aria-pressed="true"" class="btn btn-primary btn-block">PressKit</a>
-                    </div>
+                    
                 </div>
               </div>
 
@@ -120,6 +132,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
   <script src="../js/main.js"></script>
   <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <!-- Fix safari autoplay video -->
+  <script>
+    document.getElementById('background-video').play();
+  </script>
 </body>
 
 </html>
