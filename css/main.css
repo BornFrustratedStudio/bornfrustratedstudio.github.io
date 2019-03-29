@@ -1,6 +1,7 @@
 html
 {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body
@@ -45,10 +46,6 @@ box-shadow: inset 0px 0px 100px 120px rgba(0,0,0,0.75);
   position: relative;
 }
 
-.promo-image img
-{
-  max-width: 500px;
-}
 .promo-image a
 {
   top: 50%;
