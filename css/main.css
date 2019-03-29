@@ -1,349 +1,109 @@
-/*
-  SCALE RESETTING FOR FULL RESPONSIVENESS
-  --
-  --
-  --
-*/
-
-/*Small devices (smartphone)
-//------------------------------------------------------------//*/
-html,
-body {
-  font-size: 16px !important;
-  height: 100%;
-  background-color: #000 !important;
-  color: #fff !important;
-  font-family: Renner, sans-serif !important;
-}
-
-h1 {
-	font-size: 1.602em;
-}
-h2 {
-	font-size: 1.424em;
-}
-h3 {
-	font-size: 1.266em;
-}
-h4 {
-	font-size: 1.125em;
-}
-h5 {
-	font-size: 0.889em;
-}
-h6 {
-	font-size: 0.79em;
-}
-.display-1 {
-	font-size: 3.906em;
-}
-.display-2 {
-	font-size: 3.125em;
-}
-.display-3 {
-	font-size: 2.5em;
-}
-.display-4 {
-	font-size: 2em;
-}
-
-/* Medium devices (tablets, 48em and up)
-//------------------------------------------------------------//*/
-@media (min-width: 48em) {
-	h1 {
-	  font-size: 2.441em;
-	}
-	h2 {
-		font-size: 1.953em;
-	}
-	h3 {
-		font-size: 1.563em;
-	}
-	h4 {
-		font-size: 1.25em;
-	}
-	.display-1 {
-		font-size: 6em;
-	}
-	.display-2 {
-		font-size: 5.5em;
-	}
-	.display-3 {
-		font-size: 4.5em;
-	}
-	.display-4 {
-		font-size: 3.5em;
-	}
-}
-
-/* Large devices (desktops, 62em and up)*/
-@media (min-width: 62em) {
-	html,
-	body {
-		font-size: 18px !important;
-	}
-}
-
-/* Extra large devices (large desktops, 75em and up)*/
-@media (min-width: 75em) {
-	html,
-	body {
-		font-size: 20px !important;
-	}
-}
-
-h1, h2, h3, h4, h5, h6
-{
-  font-family: Renner, sans-serif !important;
-}
-
-span, p, a
-{  
-  font-family: Renner, sans-serif !important;
-}
-
-.navbar, .footer-fixed
-{
-  background-color: rgba(0, 0, 0, .65);
-}
-
-#fixed-footer-social a
-{
-  -moz-transition: color .2s ease-in;
-  -o-transition: color .2s ease-in;
-  -webkit-transition: color .2s ease-in;
-  transition: color .2s ease-in;
-
-  color: rgba(255, 255, 255, 0.4);
-}
-
-#fixed-footer-social a:hover, #fixed-footer-social a:focus
-{
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-#fixed-footer-social a:active
-{
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
-}
-
-.nav-link
-{
-  text-transform: uppercase;
-  letter-spacing: 3px;
-
-  
-}
-
-@media (min-width: 950px)
-{
-  .navbar-expand-md .navbar-nav .nav-link 
-  {
-      padding-right: 25px !important;
-      padding-left: 25px !important;
-      font-size: 16px;
-  }
-}
-
-.carousel, .carousel-item
+html
 {
   height: 100%;
 }
 
-.carousel-indicators li
+body
 {
-  background-color: rgba(0, 0, 0, 0);
-  position: relative;
-  width: 75px;
-  height: 75px;
-  margin-bottom: 5%;
-}
-
-.carousel-indicators li.active
-{
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.carousel-indicators li.active img
-{
-  opacity: 1;
-}
-
-.carousel-indicators li img
-{
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.carousel-item
-{
-  overflow: hidden;
-}
-
-.caption-align-left
-{
-  left: 5%;
-  right: auto;
-  top: auto;
-  bottom: 18%;
-}
-
-.caption-align-right
-{
-  left: auto;
-  right: 5%;
-  top: auto;
-  bottom: 18%;
-}
-
-.carousel-caption
-{
-  top: auto;
-  bottom: 18%;
-}
-
-.carousel-caption h1
-{
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
-}
-.carousel-inner
-{
-  height: 100%;
-}
-
-.game-image, .game-trailer
-{
-  position: relative;
-  display: table;
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-.game-trailer video
-{
-  position: absolute;
-  top: -50%;
-  min-width: 100%;
+  background-color: #000;
+  color: #fff;
   min-height: 100%;
-  width: auto;
-  height: auto;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+}
+
+.cover
+{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box-shadow
+{
+  -webkit-box-shadow: inset 0px 0px 100px 120px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 100px 120px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 100px 120px rgba(0,0,0,0.75);
+}
+
+.bg-light
+{
+  background-color: #111 !important;
+}
+
+#mainNav
+{
+  background-color: rgba(0,0,0,0.0);
+}
+.promo-image
+{
+  position: relative;
+}
+
+.promo-image img
+{
+  max-width: 500px;
+}
+.promo-image a
+{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.promo-image a:hover
+{
+  
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .game-title
 {
-  display: table-cell;
-  vertical-align: middle;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.game-trailer-description
+.game-poster
 {
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-}
-.section-title
-{
-  text-transform: uppercase;
-}
-
-.member-image
-{
-  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
 }
 
-.separator::after
+.game-video video
 {
-  content: ".";
-  opacity: 0;
-}
-
-.filter-dark {
-  overflow: hidden;
-  position: relative;
-  color: #fff; }
-  .filter-dark:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(21, 21, 21, 0.75); }
-
-.filter-light {
-  overflow: hidden;
-  position: relative;
-  color: #212529; }
-  .filter-light:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(243, 243, 243, 0.75); }
-
-.filter-color {
-  overflow: hidden;
-  position: relative;
-  color: #fff; }
-  .filter-color:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(18, 187, 173, 0.75); }
-
-.filter-gradient {
-  overflow: hidden;
-  position: relative;
-  color: #fff; }
-  .filter-gradient:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: linear-gradient(-30deg, rgba(79, 112, 206, 0.9) 0%, rgba(18, 187, 173, 0.9) 50%, rgba(18, 187, 173, 0.95) 100%); }
-
-.filter-fade-in {
-  overflow: hidden;
-  position: relative; }
-  .filter-fade-in:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: linear-gradient(white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); }
-
-.overlay
-{
-position: absolute;
-display: flex;
-top: 0;
-bottom: 0;
-right: 0;
-left: 0;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-}
-
-.twitter-timeline.timeline-Widget
-{
-  background-color: #000000 !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 0;
 }

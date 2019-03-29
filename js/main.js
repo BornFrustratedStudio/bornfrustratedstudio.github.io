@@ -1,17 +1,3 @@
-/// ** Twitter Style Injection
-function Repaint() 
-{
-    var backgroundColor = "#000"; 
-    var customCSS       = "" + 
-                          ".timeline-Header { background-color: " + backgroundColor + "; }" + 
-                          ".timeline-Widget { background-color: " + backgroundColor + "; }"; 
-    var w = document.getElementById("twitter-widget-0").contentDocument; 
-    var s = document.createElement("style"); 
-    s.innerHTML = customCSS; 
-    s.type      = "text/css"; 
-    
-    w.head.appendChild(s); 
-}
 
 /// ** Scroll on Section
 
@@ -38,3 +24,55 @@ $("a.js-scroll-trigger").on('click', function(event) {
 
   } 
   });
+
+  $(".game-preview").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('.game-poster', this).finish().fadeOut("slow");
+    $('.game-video', this).removeClass("d-none");
+    /*$('.game-poster', this).addClass("d-none"); 
+     */
+    $('.game-video video', this).play(); 
+
+    e.preventDefault();
+}
+
+function hideVideo(e) {
+  $('.game-poster', this).finish().fadeIn("slow")//function(){
+    $('.game-video', this).addClass("d-none");
+    $('.game-video video', this).stop(); 
+  //});
+  
+  /*$('.game-poster', this).addClass("d-none"); 
+  $('.game-video', this).removeClass("d-none"); */
+  
+  e.preventDefault();
+}
+
+$( document ).ready(function() {
+  $('#navbarResponsive').on('shown.bs.collapse', function () {
+    $('#mainNav').css("background-color", "rgba(0, 0, 0, 0.9)");
+  });
+  
+  $('#navbarResponsive').on('hide.bs.collapse', function () {
+    $('#mainNav').css("background-color", "rgba(0, 0, 0, 0.5)");
+  });
+
+  if(!$("#navbarResponsive").is(":visible"))
+  {
+    $("#mainNav").css({"background-color":"rgba(0, 0, 0, 0.6)"});
+  }
+
+  $(document).scroll(function() { // check if scroll event happened
+    if($("#navbarResponsive").is(":visible"))
+    {
+      if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+        $("#mainNav").css({"background-color":"rgba(0, 0, 0, 0.6)", "transition":"background-color 0.5s ease"}); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+      } else {
+        $("#mainNav").css({"background-color":"rgba(0, 0, 0, 0.0)", "transition":"background-color 0.5s ease"}); // if not, change it back to transparent
+      }
+    }
+  });
+
+
+});
