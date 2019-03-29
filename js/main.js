@@ -63,10 +63,13 @@ $( document ).ready(function() {
     $("#mainNav").css({"background-color":"rgba(0, 0, 0, 0.6)"});
   }
 
-  $(document).scroll(function() { // check if scroll event happened
+  $('body').on('scroll', function() { // check if scroll event happened
+    
     if($("#navbarResponsive").is(":visible"))
     {
-      if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+      if ($('body').scrollTop() > 50) 
+      { // check if user scrolled more than 50 from top of the browser window
+        
         $("#mainNav").css({"background-color":"rgba(0, 0, 0, 0.6)", "transition":"background-color 0.5s ease"}); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
       } else {
         $("#mainNav").css({"background-color":"rgba(0, 0, 0, 0.0)", "transition":"background-color 0.5s ease"}); // if not, change it back to transparent
